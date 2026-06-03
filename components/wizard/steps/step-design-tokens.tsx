@@ -67,8 +67,8 @@ function TokenRow({ token, value, onChange }: {
   return (
     <tr className="border-b last:border-0 group">
       <td className="py-2 pr-3 align-middle">
-        <p className="text-xs font-medium">{token.label}</p>
-        <p className="text-[10px] text-muted-foreground font-mono">{token.cssVar}</p>
+        <p className="text-xs font-medium pl-4">{token.label}</p>
+        <p className="text-[10px] text-muted-foreground font-mono pl-4">{token.cssVar}</p>
       </td>
       <td className="py-2 align-middle">
         <div className="flex items-center gap-2">
