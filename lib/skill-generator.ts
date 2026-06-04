@@ -98,7 +98,7 @@ export function generateSkill(s: WizardState, v: VersionMap = {}): string {
   ]
 
   const result = `---
-name: frontend-${fwShort(s.framework)}
+name: frontend-align-dev
 description: >
   Use whenever writing, modifying, or reviewing frontend code in this project.
   Stack: ${stack}.

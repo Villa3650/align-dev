@@ -1,7 +1,7 @@
 import { WizardShell } from '@/components/wizard/wizard-shell'
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aligndev.app'
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aligndev.dev'
 
 const SITE_NAME = 'AlignDev'
 const SITE_DESCRIPTION =
