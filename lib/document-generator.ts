@@ -378,14 +378,14 @@ ${tree}
 ### 3.3 Directory Naming Rules
 
 - **[Required]** Directory names must use ${s.fileNaming === 'kebab-case' ? '`kebab-case`（lowercase with hyphens）' : '`camelCase`（camel case）'}
-- **[Required]** Component directories and component files must share the same name and use ${B}PascalCase${B}
+- **[Required]** Component directories and component files must share the same name and use ${s.fileNaming === 'kebab-case' ? `${B}kebab-case${B}` : `${B}PascalCase${B}`}
 - **[Forbidden]** Create directory nesting beyond the configured depth
 
 ### 3.4 File Export Standards
 
 \`\`\`${s.language === 'typescript' ? 'typescript' : 'javascript'}
 // features/users/index.${x} — Export consistently from index; external modules should not import internal files directly
-export { UserList } from './components/UserList'
+export { UserList } from '${s.fileNaming === 'kebab-case' ? './components/user-list' : './components/UserList'}'
 export { useUsers } from './hooks/use-users'
 export type { User } from './types'
 \`\`\``
@@ -946,6 +946,7 @@ Introduce automated tests when these conditions are met:
 - Core business logic is mostly stable`
   }
 
+  const fname = s.fileNaming === 'kebab-case'
   const hasUnit = s.testing.includes('jest') || s.testing.includes('vitest')
   const hasE2E = s.testing.includes('playwright') || s.testing.includes('cypress')
   const unitTool = s.testing.includes('vitest') ? 'vitest' : 'jest'
@@ -963,10 +964,10 @@ ${hasE2E ? `| E2E tests | ${s.testing.includes('playwright') ? 'Playwright' : 'C
 ### 9.2 File Naming Standards
 
 \`\`\`
-Component/feature file：user-profile.tsx
-Unit tests：      user-profile.test.ts
-Integration tests：      user-profile.spec.tsx
-E2E tests：      user-flow.e2e.ts
+Component/feature file：${fname ? 'user-profile.tsx' : 'UserProfile.tsx'}
+Unit tests：      ${fname ? 'user-profile.test.ts' : 'UserProfile.test.ts'}
+Integration tests：      ${fname ? 'user-profile.spec.tsx' : 'UserProfile.spec.tsx'}
+E2E tests：      ${fname ? 'user-flow.e2e.ts' : 'userFlow.e2e.ts'}
 \`\`\`
 
 ${hasUnit ? `### 9.3 ${unitTool === 'vitest' ? 'Vitest' : 'Jest'} Unit Test Standards
